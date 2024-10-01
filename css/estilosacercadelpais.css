@@ -1,0 +1,149 @@
+@media (max-width: 768px) {
+    .aboutSV {
+        min-height: 400px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+    .caption {
+        padding: 20px; /* Reduce el padding en móviles */
+        max-width: 90%;
+    }
+}
+
+.aboutSV {
+    width: 100%;
+    height: 600px;
+    background-size: cover;  /* Asegura que la imagen cubra toda la sección */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Cambia a relative para evitar problemas con superposiciones */
+}
+
+/* Caption */
+.caption {
+    color: #031D40;
+    background-color: rgba(255, 255, 255, 0.558);
+    padding: 200px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+
+/* Sección datos-generales */
+.datos-generales {
+    background-color: #f8f9fa;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #031D40;
+    color: white;
+    border-radius: 40px; /* Bordes redondeados */
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-datos {
+    padding-left: 40px;
+}
+
+.boton-datos {
+    background-color: #F1B300; /* Color amarillo */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px;
+}
+
+.dato {
+    width: 230px;       
+    height: 230px;      
+    overflow: hidden;   
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+
+.dato img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.highlight-b {
+    color: #031D40;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.boton-historia {
+    align-items: left;
+    background-color: #031D40; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #FFF7E6;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.titulo-historia {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.trayectoria-historica {
+    background-color: #F1B300;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    color: 031D40;
+    border-radius: 40px; /* Bordes redondeados */
+    width: 90%;
+    margin: auto;
+}
+
+.periodos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px;
+}
+
+.periodo {
+    width: 280px;       
+    height: 400;
+    border-radius: 30px; 
+    border: 2px solid #FFF7E6;   
+    overflow: hidden;   
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.periodo img {
+    width: 80%;
+    height: 46%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+

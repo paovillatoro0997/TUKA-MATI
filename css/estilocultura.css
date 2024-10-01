@@ -1,0 +1,40 @@
+/* Cultura Section */
+.Cultura{
+    background-color: #FFF7E6;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.titulo-cultura {
+    font-family: 'DM Serif Display';
+    font-size: 50px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.cultural {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+    margin: 30px;
+}
+
+.cultura-box {
+    width: 400px;       
+    height: 700px;
+    border-radius: 30px; 
+    border: 2px solid #FFF7E6;   
+    overflow: hidden;   
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.cultura-box img {
+    width: 90%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,236 @@
+/* Estilos globales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf8f0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header y Menú de Navegación */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Asegurarse de que el header esté por encima de las secciones */
+    z-index: 1000;
+    /* Color de fondo del header */
+    background-color: #031D40;
+    /* Sombra para el header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    padding: 10px 0;
+    position: fixed;
+    padding-bottom: 20px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+  
+header .menu {
+    background-color: #031D40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li a {
+    color: #FFF7E6;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #F1B300;
+}
+
+/* Sub-menú */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #031D40;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+header ul li:hover .sub-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 20px 20px;
+    white-space: nowrap;
+}
+
+.sub-menu li a:hover {
+    background-color: #F1B300;
+    color: #031D40;
+}
+
+/* Logo en el menú */
+header ul li img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Margen entre el header y el contenido principal del slider */
+.main-content {
+    margin-top: 80px;
+  }
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Sección de presentación */
+.presentación {
+    align-items: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.presentacion-content  {
+    align-items: right;
+    text-align: justify;
+    padding: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton-about {
+    background-color: #031D40; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #F1B300;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Sección de información */
+.información {
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #031D40;
+    color: white;
+    border-radius: 40px; /* Bordes redondeados */
+    width: 80%;
+    margin: auto;
+}
+
+.información .imagen img {
+    max-width: 250px;
+    height: auto;
+}
+
+.imagen img {
+    padding: 40px 20px;
+}
+
+.significado-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 30px;
+    padding-bottom: 0px;
+}
+
+.explicacion {
+    justify-content: space-around;
+    align-items: justify;
+    padding: 10px 70px;
+    width: 100%;
+}
+
+.boton-significado, .boton-objetivo {
+    background-color: #F1B300; /* Color amarillo */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #F1B300; /* Amarillo */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #002752;
+    color: #FFF7E6;
+    padding: 20px;
+}
+
+footer h6 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .información {
+        flex-direction: column;
+    }
+
+    .información .imagen, .información .explicacion {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .información .imagen img {
+        max-width: 200px;
+    }
+}
