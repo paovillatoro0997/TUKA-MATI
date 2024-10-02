@@ -1,8 +1,6 @@
 /* Cultura Section */
 .Cultura{
-    background-color: #FFF7E6;
-    align-items: center;
-    padding: 40px 20px;
+    margin-top: 100px;
 }
 
 .titulo-cultura {
@@ -17,18 +15,19 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 0px;
-    margin: 30px;
+    margin-top: 80px;
 }
 
 .cultura-box {
     width: 400px;       
-    height: 700px;
+    height: 800px;
     border-radius: 30px; 
     border: 2px solid #FFF7E6;   
     overflow: hidden;   
     position: relative;
     text-align: center;
     padding: 10px;
+    font-size: 20px;
 }
 
 .cultura-box img {
@@ -36,5 +35,18 @@
     height: 75%;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.DT1 {
+    margin-bottom: 40px; /* Espaciado entre artistas */
+}
+
+.DT2 {
+    margin-bottom: 40px; /* Espaciado entre artistas */
+    text-align: right;
+}
+
+.todos h1 {
     margin-bottom: 20px;
 }

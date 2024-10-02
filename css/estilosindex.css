@@ -78,8 +78,7 @@ header ul li a:hover {
     position: absolute;
     background-color: #031D40;
     top: 100%;
-    left: 0;
-    padding: 0;
+    left: -10px;
     margin: 20px;
     list-style: none;
     opacity: 0;
@@ -95,11 +94,14 @@ header ul li:hover .sub-menu {
 
 .sub-menu li {
     display: block;
+    margin-bottom: 10px;
 }
 
 .sub-menu li a {
-    padding: 20px 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
     white-space: nowrap;
+    transition: background-color 0.3s; 
 }
 
 .sub-menu li a:hover {
@@ -117,13 +119,7 @@ header ul li img {
 .main-content {
     margin-top: 80px;
   }
-
-/* Carrusel */
-.carousel-inner img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
+  
 
 /* Sección de presentación */
 .presentación {

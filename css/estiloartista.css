@@ -9,3 +9,32 @@
     color: #031D40;
     background-color: rgba(255, 255, 255, 0.558);
 }
+
+.todos {
+    padding: 60px;
+    color: #031D40;
+    line-height: 1.6;
+    margin: 80px;
+}
+
+.artista1 {
+    margin-bottom: 40px; /* Espaciado entre artistas */
+}
+
+.artista2 {
+    margin-bottom: 40px; /* Espaciado entre artistas */
+    text-align: right;
+}
+
+.todos h2 {
+    font-size: 30px;
+    font-family: 'DM Sans';
+    color: #031D40; /* Azul oscuro para los títulos */
+    margin-bottom: 10px;
+}
+
+.todos p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}

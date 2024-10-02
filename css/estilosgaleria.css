@@ -1,107 +1,59 @@
-/* General */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
-
-header {
-    background-color: #004085;
-    padding: 10px 0;
-    color: white;
-    text-align: center;
-}
-
-/* Menú de navegación */
-.menu nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.aboutGaleria {
+    width: 100%;
+    height: 600px;
+    background-size: cover;  /* Asegura que la imagen cubra toda la sección */
+    background-position: center;
     display: flex;
     justify-content: center;
-    background-color: #0062cc;
-}
-
-.menu nav ul li {
-    margin: 0 15px;
+    align-items: center;
     position: relative;
 }
 
-.menu nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-}
-
-.menu nav ul li a:hover {
-    background-color: #004085;
+.captionGaleria {
+    color: #031D40;
+    background-color: rgba(255, 255, 255, 0.558);
+    padding: 200px;
+    height: 100%;
     border-radius: 5px;
+    text-align: justify;
+    font-size: 25px;
 }
 
-/* Submenú */
-.menu nav ul .sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #004085;
-    top: 100%;
-    left: 0;
-    width: 200px;
-    list-style: none;
-}
-
-.menu nav ul li:hover .sub-menu {
-    display: block;
-}
-
-.menu nav ul .sub-menu li {
-    margin: 0;
-}
-
-.menu nav ul .sub-menu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu nav ul .sub-menu li a:hover {
-    background-color: #0056b3;
-}
-
-/* Sección de contenido */
-.section-content {
-    padding: 20px;
+.highlight-gb {
+    color: #031D40;
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
     text-align: center;
-    background-color: #f8f9fa;
-}
-
-.section-content p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #333;
 }
 
 /* Sección de exposiciones */
+
 .exposiciones {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;    
 }
 
-.exposiciones div {
+.exposicion-box {
+    width: 500px;       
+    height: 700px;
+    border-radius: 30px; 
+    border: 2px solid #FFF7E6;   
+    overflow: hidden;   
+    position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0px;
 }
 
-.exposiciones img {
-    width: 300px;
-    height: auto;
+.exposicion-box img {
+    width: 90%;
+    height: 75%;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 .exposiciones p {
@@ -109,27 +61,136 @@ header {
     margin: 10px 0;
 }
 
-.exposiciones button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #0062cc;
+.captionExpo {
     color: white;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.exposiciones button:hover {
-    background-color: #004085;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
+    padding-top: 300px;
+    height: 100%;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-    font-size: 0.9em;
+    font-size: 20px;
+}
+
+.boton-expo {
+    background-color: #F1B300;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.movements{
+    margin-top:120px;
+}
+
+.movements h1{
+    font-family: 'DM Sans';
+    padding: 35px;
+}
+
+.mov-content h2 {
+    font-size: 30px;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.movements p {
+    font-size: 20px;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.movimientos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0px;
+    margin: 5px;
+}
+
+.movimiento {
+    width: 450px;       
+    height: 700px;
+    border-radius: 30px; 
+    border: 2px solid #FFF7E6;   
+    overflow: hidden;   
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.movimiento img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Obrassobreleyendas body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f4ec;
+    padding: 20px;
+}
+
+.Obrassobreleyendas h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Obrassobreleyendas p {
+    text-align: justify;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-display {
+    text-align: center;
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.thumbnail {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 18px;
 }

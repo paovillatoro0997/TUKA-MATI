@@ -8,47 +8,59 @@
         <!-- Con el uso de JavaScript, el contenido de este header se carga 
               desde un archivo externo (header.html) -->
     </header>
-        
-    <h1>Obras sobre leyendas</h1>
+    <div class="movements">
+    <h1>Leyendas</h1>
     <p>Las leyendas salvadoreñas son un tesoro cultural que refleja la rica historia, las creencias y la imaginación del pueblo salvadoreño. Estas narraciones, transmitidas de generación en generación, no solo entretienen sino que también enseñan valores, moralejas y aspectos esenciales de la identidad nacional. Las leyendas como "La Siguanaba", "El Cipitío", y "La Carreta Chillona" son ejemplos icónicos que han capturado la imaginación colectiva del país.
 
         Las obras de arte inspiradas en estas leyendas son una manifestación visual y tangible de estas historias. A través de la pintura, la escultura y otras formas de expresión artística, los artistas salvadoreños han dado vida a estos personajes y eventos míticos, permitiendo a las nuevas generaciones experimentar y conectarse con su herencia cultural de una manera vibrante y dinámica.
         </p>
-
-    <div class="Obrassobreleyendas">
-
-        <div id="carouselobrassobreleyendas" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMAGENES/obrassobreleyendas/el terror cuscatleco-obra sobre leyenda.jpg" alt="La siguanaba">
-                    <p>Escultura,El "Terror Cuscatleco" de Wilton Molina - La Siguanaba</p>
-                    <p>Escultura 2023</p>
-                </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMAGENES/obrassobreleyendas/la carreta chillona-obra sobre leyenda.png" alt="La carreta chillona">
-                    <p>Exposición, ¨de la arcilla a la memoria" de escultor anónimo - La Carreta Chillona</p>
-                    <p>Escultura 2023</p>
-                </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="IMAGENES/obrassobreleyendas/una máscara una historia-obra sobre leyenda.jpg" alt="Máscaras de historia">
-                    <p>Exposición, ¨“Una máscara, una historia” de escultores varios, máscaras de personajes mitológicos y leyendas del folclor salvadoreño</p>
-                    <p>Escultura 2023</p>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="IMAGENES/obrassobreleyendas/cihuananhuat-obras sobre leyendas.jpg" alt="Cihuananhuat">
-                        <p>Pintura, Cihuananhuat -Salarrué</p>
-                        <p>Escultura 1940</p>
+</div>
+<div class="Obrassobreleyendas">
+            <!-- Galería interactiva -->
+            <div class="gallery-container">
+                <!-- Imagen principal e información -->
+                <div class="main-display">
+                    <img id="main-image" alt="">
+                    <div class="info">
+                        <h2 id="title"></h2>
+                        <p id="description"></p>
                     </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                         <img src="IMAGENES/obrassobreleyendas/la doncella rebelde de xilopango-obra sobre leyenda.jpg" alt="La doncella">
-                        <p>Escultura, La Doncella Rebelde de Xilopango de  Llort Chouss y José Mejía Vides</p>
-                        <p>Escultura 2022</p>
                 </div>
-        </div>   
+    
+                <!-- Imágenes pequeñas para seleccionar -->
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="IMAGENES/obrassobreleyendas/el terror cuscatleco-obra sobre leyenda.jpg" 
+                         data-title="El Terror Cuscatleco de Wilton Molina - La Siguanaba" 
+                         data-description="Escultura 2023" 
+                         alt="La Siguanaba" 
+                         onclick="updateGallery(this)">
+                    
+                    <img class="thumbnail" src="IMAGENES/obrassobreleyendas/la carreta chillona-obra sobre leyenda.png" 
+                         data-title="La Carreta Chillona" 
+                         data-description="Escultura 2023" 
+                         alt="La Carreta Chillona" 
+                         onclick="updateGallery(this)">
+                    
+                    <img class="thumbnail" src="IMAGENES/obrassobreleyendas/una máscara una historia-obra sobre leyenda.jpg" 
+                         data-title="Una máscara, una historia" 
+                         data-description="Máscaras mitológicas 2023" 
+                         alt="Máscaras de Historia" 
+                         onclick="updateGallery(this)">
+                    
+                    <img class="thumbnail" src="IMAGENES/obrassobreleyendas/cihuananhuat-obras sobre leyendas.jpg" 
+                         data-title="Cihuananhuat" 
+                         data-description="Pintura 1940" 
+                         alt="Cihuananhuat" 
+                         onclick="updateGallery(this)">
+                    
+                    <img class="thumbnail" src="IMAGENES/obrassobreleyendas/la doncella rebelde de xilopango-obra sobre leyenda.jpg" 
+                         data-title="La Doncella Rebelde de Xilopango" 
+                         data-description="Escultura 2022" 
+                         alt="La Doncella Rebelde" 
+                         onclick="updateGallery(this)">
+                </div>
+            </div>
+ </div>   
         <script src="js/script.js"></script>
 <footer>
     <h6>Tuka Mati 2024 - Todos los derechos reservados</h6>
